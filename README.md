@@ -1,30 +1,29 @@
 # Little Gift Finder
 
-A personal, non-commercial gift inspiration prototype. Static HTML, CSS and JavaScript; no build, API credentials or external runtime dependencies.
+A personal gift inspiration project: https://sylarchan91.github.io/little-gift-finder/
 
-## Live site
-https://sylarchan91.github.io/little-gift-finder/
+## Run
 
-## Current functionality
-- Match 12 editorial gift ideas by interest and a conservative budget ceiling.
-- Prioritize the selected occasion; adapt guidance and card messages to the relationship.
-- Discover a random matching idea and mark favorites during the current visit.
-- Read source-linked relationship and gift-giving notes.
-- Responsive layout, keyboard controls, native disclosure panels and privacy dialog.
+- `npm ci`
+- `npm run dev`
+- `npm test`
+- `npm run build`
 
-The selections and saved markers are in-memory only. There is no account, analytics, checkout, affiliate program, live Etsy data or AI personality assessment. Broad USD budget estimates are editorial planning ranges, not current market prices. AI-created artwork illustrates a concept, not actual products.
+React with Vite, GSAP and Phosphor. GitHub Pages serves the generated `docs/` folder from `main`. Build before pushing. Images and Satoshi fonts are hosted locally with the site. The `.nojekyll` file in `public/` is copied into the deployment.
 
-## Local preview
-Run `python3 -m http.server 8080` in this folder and open http://localhost:8080.
+## Features
 
-## Publishing
-GitHub Pages publishes the root of `main`. The repository contains only this website. Do not add credentials or business research archives.
+- Original concept imagery, an expanding gift gallery, example-scenario carousel, image scroll transitions and desktop story stacking. Reduced-motion users get the full content without animations.
+- Twelve editorial concepts ranked by evidence, gift intent and relationship context after budget and exclusion filters.
+- Exact-request priority, explanations and uncertainty; bounded session feedback; shortlist and hidden-item reset.
+- Native dialog details, privacy/credits and honest planned Etsy integration information.
 
-## Sources and interpretation
-- Chan & Mogilner, Experiential Gifts Foster Stronger Social Relationships than Material Gifts: https://doi.org/10.1093/jcr/ucw067
-- Gottman Institute, Small Actions Make Big Impacts: https://www.gottman.com/blog/small-actions-make-big-impacts/
+See [MODEL.md](MODEL.md) for the actual scoring rules and limits. Illustrations are not products for sale. USD planning estimates are not current seller prices. No live Etsy connection, accounts, checkout, affiliate links or analytics.
 
-The experience finding is a group-level result, not a validated prediction engine. Applying everyday attention to gift selection and relationship-stage tips is editorial interpretation, explicitly identified on the page.
+## Asset credits
 
-## Planned Etsy integration
-Subject to Etsy approval and applicable terms, a future backend may retrieve public listing titles, images, prices and shop information for buyer-facing discovery. No integration exists in this version. Any API secrets must stay server-side. Revisit hosting before commercial/affiliate use. Describe the public audience truthfully in the API application.
+Original AI-generated concept images. Satoshi by Indian Type Foundry via https://www.fontshare.com/fonts/satoshi (unmodified webfonts). Phosphor icons and GSAP are bundled from their official npm packages.
+
+## Deployment
+
+`npm run build` regenerates `docs`. Commit source, package lock, model documentation and the generated folder. Push `main`; GitHub Pages publishes `docs`. Never add credentials or unrelated business archives.
