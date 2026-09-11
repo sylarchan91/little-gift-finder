@@ -13,7 +13,13 @@
 @media(max-width:800px){.result-grid:has(>.result-card:only-child){grid-template-columns:1fr}.result-grid:has(>.result-card:last-child:nth-child(3))>.result-card:last-child{grid-column:1/-1}}
 @media(max-width:360px){.hero-actions{gap:12px}.hero-actions .plain-link{font-size:10px;white-space:nowrap}}
 
-/* Inline title artwork is deliberately aligned to the text baseline and keeps a calmer crop. */
-.inline-image{display:inline-flex;width:124px;height:66px;vertical-align:-.12em;align-items:center;justify-content:center;border:1px solid #cfc6b5;border-radius:999px;overflow:hidden;margin-inline:10px;background:#e6c1a5;box-shadow:0 9px 18px #6a593516}
-.inline-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 64%}
-@media(max-width:520px){.inline-image{width:78px;height:42px;margin-inline:5px;vertical-align:-.1em}}
+.approach-heading{margin-bottom:65px}
+.approach-heading h2{font-size:clamp(46px,6vw,85px);margin:0}
+.approach-heading h2 em{font-style:normal;color:var(--orange)}
+.approach-note{display:flex;align-items:center;gap:15px;width:min(310px,100%);margin:26px 0 0 auto;padding:10px 14px 10px 10px;background:#f0e2d4;border:1px solid #ddc8b5;border-radius:12px;box-shadow:0 10px 22px #6a593512;rotate:-2deg}
+.approach-note img{width:78px;height:64px;flex:none;object-fit:cover;object-position:center 57%;border-radius:7px}
+.approach-note div{min-width:0}
+.approach-note .small-label{font-size:8px;letter-spacing:1.3px}
+.approach-note p{margin:7px 0 0;font-size:13px;line-height:1.25;letter-spacing:-.15px}
+@media(max-width:800px){.approach-heading{margin-bottom:32px}.approach-heading h2{font-size:clamp(45px,9vw,68px)}.approach-note{margin-top:24px;width:min(300px,100%)} }
+@media(max-width:520px){.approach-note{gap:12px;padding:8px 12px 8px 8px}.approach-note img{width:72px;height:58px}.approach-note p{font-size:12px}}
