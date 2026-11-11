@@ -24,6 +24,14 @@ See [MODEL.md](MODEL.md) for the actual scoring rules and limits. Illustrations 
 
 Original AI-generated concept images. Satoshi by Indian Type Foundry via https://www.fontshare.com/fonts/satoshi (unmodified webfonts). Phosphor icons and GSAP are bundled from their official npm packages.
 
+## hong keyword tool
+
+This site is also the public homepage for hong keyword tool, a personal app that looks up keyword search volume in the signed-in user’s own Google Ads account. The homepage section links to the privacy policy and terms. Source pages are `public/privacy.html` and `public/terms.html` (styled by `public/legal.css`). `npm run build` copies them into `docs/`.
+
+- Homepage: https://sylarchan91.github.io/little-gift-finder/
+- Privacy policy: https://sylarchan91.github.io/little-gift-finder/privacy.html
+- Terms of service: https://sylarchan91.github.io/little-gift-finder/terms.html
+
 ## Deployment
 
 `npm run build` regenerates `docs`. Commit source, package lock, model documentation and the generated folder. Push `main`; GitHub Pages publishes `docs`. Never add credentials or unrelated business archives.
